@@ -1,14 +1,6 @@
-const express = require('express')
-const app = express()
-const cors = require('cors')
-const fs = require('fs');
-const path = require('path');
+const express = require('express');
+const app = express();
 const bodyParser = require('body-parser');
-
-const corsOptions = {
-  origin: 'http://localhost:8080', //只有百度可以访问
-  optionsSuccessStatus: 200
-}
 
 // 接口参数处理
 app.use(bodyParser.json());
@@ -26,5 +18,5 @@ const port = process.env.PORT || 8080; // 端口设置
 
 // 启动服务
 app.listen(port, () => {
-  	console.log(`server started at localhost:${port}`);
+  console.log(`server started at localhost:${port}`);
 });
