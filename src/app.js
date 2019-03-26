@@ -27,4 +27,4 @@ const port = process.env.PORT || 8080; // 端口设置
 // 启动服务
 app.listen(port, () => {
   	console.log(`server started at localhost:${port}`);
-})
+});
