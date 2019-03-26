@@ -36,19 +36,31 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.16.4",
-    "node-fetch": "^2.3.0",
     "source-map": "^0.7.3"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.1",
     "conventional-changelog": "^3.0.6",
     "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.15.3",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^5.2.2",
     "ghooks": "^2.0.4",
     "karma": "^4.0.1",
     "lint-staged": "^8.1.5",
     "mocha": "^6.0.2",
     "prettier": "^1.16.4",
     "validate-commit-msg": "^2.14.0"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
   },
   "keywords": [
     "node",
