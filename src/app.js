@@ -1,6 +1,13 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const bodyParser = require('body-parser');
+
+const corsOptions = {
+  origin: 'http://127.0.0.1:8081',
+  optionsSuccessStatus: 200
+};
+app.use(cors(corsOptions));
 
 // 接口参数处理
 app.use(bodyParser.json());
